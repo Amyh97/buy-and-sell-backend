@@ -2,11 +2,9 @@ import Hapi, { server } from '@hapi/hapi';
 import routes from './routes';
 import { db } from './database';
 
-let server; 
-
 
 const start = async () => {
-    server = Hapi.server({
+   let server = Hapi.server({
         port: 8000,
         host: "localhost",
     });
